@@ -25,7 +25,7 @@ Compile ecm.c and unecm.c if necessary.
 open terminal run make file to produce executables, run 'sudo make install' to install both files in to your path
 
 ### Usage
-open terminal in the same path as fiels that you desire to work with
+open terminal in the same path as the files that you desire to work with
 
 ##### to encode a file
 
