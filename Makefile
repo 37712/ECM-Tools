@@ -20,14 +20,19 @@ ecm: ecm.c
 unecm: unecm.c
 	$(CC) $(CFLAGS) -o unecm unecm.c
 
+# for linux only, install the files in to path
 install:
 	install -dm 755 $(DESTDIR)/usr/bin
 	install -m 755 ecm $(DESTDIR)/usr/bin/
 	install -m 755 unecm $(DESTDIR)/usr/bin/
 
+#for linus only, remove files from path
+uninstall:
+	rm /usr/bin/ecm /usr/bin/unecm
+
 # Clean up executables
 clean:
-	-rm -f ecm unecm
+	rm -f ecm unecm
 
 .PHONY: all clean
 
